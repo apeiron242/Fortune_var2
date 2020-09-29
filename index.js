@@ -1,15 +1,19 @@
-var bottom = document.querySelector("#bottom");
-var variable = document.querySelector("#variable");
-
 var topSubmit = document.querySelector("#topSubmit");
 var bottomSubmit = document.querySelector("#bottomSubmit");
 var variableSubmit = document.querySelector("#variableSubmit");
 
-var showTop = document.querySelector("#showTop");
-
 topSubmit.addEventListener("click", print)
 bottomSubmit.addEventListener("click", print2)
 variableSubmit.addEventListener("click", print3)
+
+function getRandom(){
+    document.querySelector("#top").value = Math.round(Math.random() * 7 + 1)
+    document.querySelector("#bottom").value = Math.round(Math.random() * 7 + 1)
+    document.querySelector("#variable").value = Math.round(Math.random() * 5 + 1)
+    print();
+    print2();
+    print3();
+}
 
 function print(){
     if (document.querySelector("#top").value == 1){
