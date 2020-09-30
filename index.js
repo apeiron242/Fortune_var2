@@ -11,6 +11,18 @@ var bottomPic = document.querySelector("#bottomPic");
 var variableTopPic = document.querySelector("#variableTopPic");
 var variableBottomPic = document.querySelector("#variableBottomPic");
 
+var now = new Date();
+var day = now.getDate();
+var month = now.getMonth() + 1;
+var year = now.getFullYear();
+var time = now.getHours();
+var minutes = now.getMinutes();
+
+function getText(){
+    var text = document.querySelector("#text").value;
+    document.querySelector("#고민").innerHTML = text + " " + year + "년 " + month + "월 " + day + "일 " + time + ":" + minutes
+}
+
 function getRandom(){
     document.querySelector("#top").value = Math.round(Math.random() * 7 + 1);
     document.querySelector("#bottom").value = Math.round(Math.random() * 7 + 1);
