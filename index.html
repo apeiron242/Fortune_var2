@@ -5,11 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortune</title>
     <style>
-        #submit{
-            border: thin 0px white;
+        h1{
+            text-align: center;
+            border-bottom: solid 3px;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
         }
-        #show{
-            border: thin 0px white;
+        #submit{
+            display: block;
+        }
+        .submit{
+            background-color: #D6A2E8;
+            color: black;
+        }
+        #random{
+            position: relative;
+            justify-self: center;
+        }
+        .top{
+            display: flexbox;
+            flex-direction: row;
+        }
+        .buttom{
+            display: flexbox;
+            flex-direction: row;
         }
         #topPic { 
             padding: 0px;
@@ -32,29 +51,29 @@
 </head>
 <body>
     <h1>매화역수로 운세 보기</h1>
-    <div id="submit">
-        <input type="number" name="상괘" id="top" min="1" max="8">
-        <input type="submit" value="상괘 입력" id="topSubmit"><br><br>
-        <input type="number" name="하괘" id="bottom" min="1" max="8">
-        <input type="submit" value="하괘 입력" id="bottomSubmit"><br><br>
-        <input type="number" name="동효" id="variable" min="1" max="6">
-        <input type="submit" value="동효 입력" id="variableSubmit"><br><br>
-        <input type="submit" value="모든 값 랜덤으로 선택하기" id="random" onclick="getRandom()">
-    </div>
-    <div id="show">
-        <div id="showTop">
+    <span id="submit">
+        <input type="number" name="상괘" id="top" min="1" max="8" class="number">
+        <input type="submit" value="상괘 입력" id="topSubmit" class="submit">
+        <input type="number" name="하괘" id="bottom" min="1" max="8" class="number">
+        <input type="submit" value="하괘 입력" id="bottomSubmit" class="submit">
+        <input type="number" name="동효" id="variable" min="1" max="6" class="number">
+        <input type="submit" value="동효 입력" id="variableSubmit" class="submit"><br><br>
+        <input type="submit" value="모든 값 랜덤으로 선택하기" id="random" class="submit" onclick="getRandom()">
+    </span>
+    <span class="container">
+        <span id="showTop">
             <img src="" id="topPic" class="top">
-        </div>
-        <div id="showBottom">
-            <img src="" id="bottomPic" class="bottom">
-        </div>
-        <div id="variableTop">
+        </span>
+        <span id="variableTop">
             <img src="" id="variableTopPic" class="top">
-        </div>
-        <div id="variableBottom">
+        </span><br>
+        <span id="showBottom">
+            <img src="" id="bottomPic" class="bottom">
+        </span>
+        <span id="variableBottom">
             <img src="" id="variableBottomPic" class="bottom">
-        </div>
-    </div>
+        </span>
+    </span>
     <script src="index.js"></script>
 </body>
 </html>
