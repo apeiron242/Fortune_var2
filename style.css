@@ -1,0 +1,42 @@
+h1{
+    text-align: center;
+    border-bottom: solid 3px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+#submit{
+    display: block;
+}
+.submit{
+    background-color: #D6A2E8;
+    color: black;
+}
+#random{
+    position: relative;
+    justify-self: center;
+}
+.top{
+    display: flexbox;
+    flex-direction: row;
+}
+.buttom{
+    display: flexbox;
+    flex-direction: row;
+}
+#topPic { 
+    padding: 0px;
+    width: 150px;
+}
+#bottomPic{
+    padding: 0px;
+    width: 150px;
+    position: static;          
+}
+#variableTopPic{
+    padding: 0px;
+    width: 150px;
+}
+#variableBottomPic{
+    padding: 0px;
+    width: 150px;
+}
