@@ -1,10 +1,8 @@
-const topSubmit = document.querySelector("#topSubmit");
-const bottomSubmit = document.querySelector("#bottomSubmit");
-const variableSubmit = document.querySelector("#variableSubmit");
+const submitAll = document.querySelector('#submitAll')
 
-topSubmit.addEventListener("click", print);
-bottomSubmit.addEventListener("click", print2);
-variableSubmit.addEventListener("click", print3);
+submitAll.addEventListener("click", print);
+submitAll.addEventListener("click", print2);
+submitAll.addEventListener("click", print3);
 
 var topPic = document.querySelector("#topPic");
 var bottomPic = document.querySelector("#bottomPic");

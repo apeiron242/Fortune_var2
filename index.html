@@ -9,7 +9,7 @@
 <body>
     <h1 class="title has-text-info my-3 ml-3">매화역수로 운세 보기</h1>
     <div class="container">
-        <div class="field has-addons mt-6">
+        <div class="field has-addons mt-6 ml-3">
             <div class="control">
                 <input type="text" id="text" class='input' placeholder="고민을 적어주세요">   
             </div>
@@ -20,9 +20,15 @@
             </div>     
         </div>
         <h3 id="고민" class="my-5"></h3>
-        <div class="field has-addons mt-5 mb-5">
+        <div class="field has-addons ml-3">
+            <div class="control">
+                <input type="submit" value="모든 값 랜덤으로 선택하기" id="random" class="button is-info" onclick="getRandom()">
+            </div>
+        </div>
+        <div class="field has-addons mt-5 mb-5 ml-3">
             <div class="control">
                 <select name="상괘" name="상괘" id="top" class="input">
+                    <option value="1">직접 선택</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -34,10 +40,11 @@
                 </select>
             </div>
             <div class="control">
-                <input type="submit" value="상괘 입력" id="topSubmit" class="button is-info mr-5">
+                <input type="submit" value="상괘" id="topSubmit" class="button is-primary mr-5">
             </div>
             <div class="control">
                 <select name="하괘" name="하괘" id="bottom" class="input">
+                    <option value="1">직접 선택</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -49,27 +56,26 @@
                 </select>
             </div>
             <div class="control">
-                <input type="submit" value="하괘 입력" id="bottomSubmit" class="button is-info mr-5">
+                <input type="submit" value="하괘" id="bottomSubmit" class="button is-primary mr-5">
             </div>
             <div class="control">
                 <select name="동효" name="동효" id="variable" class="input">
+                        <option value="1">직접 선택</option>
                         <option value="1">1</option>
                         <option value="2">2</option>
                         <option value="3">3</option>
                         <option value="4">4</option>
                         <option value="5">5</option>
                         <option value="6">6</option>
-                        <option value="7">7</option>
-                        <option value="8">8</option>
                 </select>
             </div>
             <div class="control">
-                <input type="submit" value="동효 입력" id="variableSubmit" class="button is-info">
+                <input type="submit" value="동효" id="variableSubmit" class="button is-primary">
             </div>
         </div>
-        <div class="field has-addons">
+        <div class="field has-addons ml-3">
             <div class="control">
-                <input type="submit" value="모든 값 랜덤으로 선택하기" id="random" class="button is-info" onclick="getRandom()">
+                <input type="submit" value="제출" id="submitAll" class="button is-info">
             </div>
         </div>
     <section class="section">
