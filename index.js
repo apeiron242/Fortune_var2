@@ -18,8 +18,9 @@ var minutes = now.getMinutes();
 
 function getText(){
     var text = document.querySelector("#text").value;
-    document.querySelector("#고민").innerHTML = "고민 내용: " + text
-    document.querySelector("#시간").innerHTML = "시간: " + year + "년 " + month + "월 " + day + "일 " + time + ":" + minutes
+    document.querySelector("#고민").innerHTML = "고민 내용: " + text;
+    document.querySelector("#시간").innerHTML = "시간: " + year + "년 " + month + "월 " + day + "일 " + time + ":" + minutes;
+    document.querySelector("#text").value = "";
 }
 
 function getRandom(){
