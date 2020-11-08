@@ -5,104 +5,128 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fortune</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <style>
+        *{
+            background-color: white;
+        }
+        #border{
+            border: 3px solid #4fc3f7;
+        }
+    </style>
 </head>
 <body>
-    <h1 class="title has-text-info my-3 ml-3">매화역수로 운세 보기</h1>
-    <div class="container">
-        <div class="field has-addons mt-6 ml-3">
-            <div class="control">
-                <input type="text" id="text" class='input' placeholder="고민을 적어주세요">   
-            </div>
-            <div class="control">
-                <input type="button" value="고민 제출" class="button is-info" id="submitText" onclick="
-                    getText()
-                ">            
-            </div>     
-        </div>
-        <h3 id="고민" class="my-5 ml-3"></h3>
-        <div class="field has-addons ml-3">
-            <div class="control">
-                <input type="submit" value="모든 값 랜덤으로 선택하기" id="random" class="button is-info" onclick="getRandom()">
-            </div>
-        </div>
-        <div class="field has-addons mt-5 mb-5 ml-3">
-            <div class="control">
-                <select name="상괘" name="상괘" id="top" class="input">
-                    <option value="0">직접 선택</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                </select>
-            </div>
-            <div class="control">
-                <input type="submit" value="상괘" id="topSubmit" class="button is-primary mr-5">
-            </div>
-            <div class="control">
-                <select name="하괘" name="하괘" id="bottom" class="input">
-                    <option value="0">직접 선택</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                </select>
-            </div>
-            <div class="control">
-                <input type="submit" value="하괘" id="bottomSubmit" class="button is-primary mr-5">
-            </div>
-            <div class="control">
-                <select name="동효" name="동효" id="variable" class="input">
-                        <option value="0">직접 선택</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        <option value="6">6</option>
-                </select>
-            </div>
-            <div class="control">
-                <input type="submit" value="동효" id="variableSubmit" class="button is-primary">
-            </div>
-        </div>
-        <div class="field has-addons ml-3">
-            <div class="control">
-                <input type="submit" value="제출" id="submitAll" class="button is-info">
-            </div>
-        </div>
-    <section class="section">
-        <div class="container">
-            <div class="columns is-mobile">
-                <div class="column is-4">
-                    <h3 class="subtitle has-text-centered mr-2">본괘</h3>
-                    <div id="showTop">
-                        <img src="pics\건.png" id="topPic" class="image is-128x128px">
+    <div class="columns is-flex-direction-row">
+        <div class="column is-7">
+            <h1 class="title has-text-info has-background-info-light mb-0 py-6 has-text-centered">매화역수로 운세 보기</h1>
+            <div id="border" class="has-background-white-bis">
+                <div class="field has-addons pt-4 is-justify-content-center">
+                    <div class="control">
+                        <input type="text" id="text" class='input' placeholder="고민을 적어주세요">   
                     </div>
-                    <div id="showBottom">
-                        <img src="pics\건.png" id="bottomPic" class="image is-128x128px">
+                    <div class="control">
+                        <input type="button" value="고민 제출" class="button is-info" id="submitText" onclick="
+                            getText()
+                        ">            
+                    </div>     
+                </div>
+                <h3 id="고민" class="my-5 has-text-centered has-text-success-dark"></h3>
+                <h3 id="시간" class="my-5 has-text-centered has-text-success-dark"></h3>
+                <div class="field has-addons is-justify-content-center">
+                    <div class="control">
+                        <input type="submit" value="랜덤으로 제출" id="random" class="button is-info" onclick="getRandom()">
                     </div>
                 </div>
-                <div class="column is-4">
-                    <h3 class="subtitle has-text-centered mr-1">변괘</h3>
-                    <div id="variableTop">
-                        <img src="pics\건.png" id="variableTopPic" class="image is-128x128px">
+                <div class="field has-addons mt-5 mb-5 is-justify-content-center">
+                    <div class="control">
+                        <select name="상괘" name="상괘" id="top" class="input">
+                            <option value="0">직접 선택</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
                     </div>
-                    <div id="variableBottom">
-                        <img src="pics\건.png" id="variableBottomPic" class="image is-128x128px">
+                    <div class="control">
+                        <input type="submit" value="상괘" id="topSubmit" class="button is-primary mr-3">
+                    </div>
+                    <div class="control">
+                        <select name="하괘" name="하괘" id="bottom" class="input">
+                            <option value="0">직접 선택</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </div>
+                    <div class="control">
+                        <input type="submit" value="하괘" id="bottomSubmit" class="button is-primary mr-3">
+                    </div>
+                    <div class="control">
+                        <select name="동효" name="동효" id="variable" class="input">
+                                <option value="0">직접 선택</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                        </select>
+                    </div>
+                    <div class="control">
+                        <input type="submit" value="동효" id="variableSubmit" class="button is-primary">
+                    </div>
+                </div>
+                <div class="field has-addons is-justify-content-center mb-4">
+                    <div class="control">
+                        <input type="submit" value="직접 제출" id="submitAll" class="button is-primary">
                     </div>
                 </div>
             </div>
+            <div class="container mt-6">
+                <div class="columns is-mobile">
+                    <div class="column is-5">
+                        <h3 class="subtitle has-text-centered mr-2">본괘</h3>
+                        <div id="showTop">
+                            <img src="pics\건.png" id="topPic" class="image is-128x128px">
+                        </div>
+                        <div id="showBottom">
+                            <img src="pics\건.png" id="bottomPic" class="image is-128x128px">
+                        </div>
+                    </div>
+                    <div class="column is-2 is-align-self-center">
+                        <img src="./pics/arrow.PNG" class="is-2by1 pt-6" />
+                    </div>
+                    <div class="column is-5">
+                        <h3 class="subtitle has-text-centered mr-1">변괘</h3>
+                        <div id="variableTop">
+                            <img src="pics\건.png" id="variableTopPic" class="image is-128x128px">
+                        </div>
+                        <div id="variableBottom">
+                            <img src="pics\건.png" id="variableBottomPic" class="image is-128x128px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container mt-6">
+                <div class="columns is-mobile has-text-centered">
+                    <div class="column is-4" id="resultMe"></div>
+                    <div class="column is-4" id="resultNow"></div>
+                    <div class="column is-4" id="resultFuture"></div>
+                </div>
+            </div>
         </div>
-    </section>
-
+        <div class="column is-5 my-6">
+            <h1 class="title has-text-centered">해석 방법</h1>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
