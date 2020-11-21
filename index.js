@@ -7,6 +7,7 @@ submitAll.addEventListener("click", print4);
 submitAll.addEventListener("click", print5);
 submitAll.addEventListener("click", print6);
 submitAll.addEventListener("click", print7);
+submitAll.addEventListener("click", showFinalResult);
 
 var topPic = document.querySelector("#topPic");
 var bottomPic = document.querySelector("#bottomPic");
@@ -38,6 +39,7 @@ function getRandom(){
     print5();
     print6();
     print7();
+    showFinalResult();
 }
 
 
@@ -731,4 +733,12 @@ function print7(){
             explainResult.innerHTML = "현재 상황은 매우 좋습니다"
         }
     }
+}
+
+function showFinalResult(){
+    const finalResult = document.querySelector('#finalResult');
+    const interpretation = document.querySelector("#interpretation");
+
+    finalResult.classList.toggle('is-hidden');
+    interpretation.classList.toggle('is-hidden')
 }
