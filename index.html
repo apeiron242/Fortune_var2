@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -90,7 +90,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-6">
+            <div class="container mt-4">
                 <div class="columns is-mobile">
                     <div class="column is-5">
                         <h3 class="subtitle has-text-centered mr-2">본괘</h3>
@@ -115,33 +115,33 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-6 is-hidden" id="finalResult">
-                <div class="title has-text-centered">점의 결과</div>
+            <div class="container is-hidden mb-6 mt-0" id="finalResult">
+                <div class="has-text-info title has-text-centered mb-6">점의 결과</div>
                 <div class="columns is-mobile has-text-centered">
                     <div class="column is-4" id="resultMe">
-                        <h3 class="subtitle">나의 괘</h3>
+                        <h3 class="subtitle has-text-dark">나의 괘</h3>
                         <img src="" alt="">        
                     </div>
                     <div class="column is-4" id="resultNow">
-                        <h3 class="subtitle">현재 상황</h3>
+                        <h3 class="subtitle has-text-dark">현재 상황</h3>
                         <img src="" alt="">
                     </div>
                     <div class="column is-4" id="resultFuture">
-                        <h3 class='subtitle'>일의 결과</h3>
+                        <h3 class='subtitle has-text-dark'>일의 결과</h3>
                         <img src="" alt="">
                     </div>
                 </div>
             </div>
-            <div class="has-text-centered mt-3 is-hidden" id="interpretation">
-                <h1 class="title">점의 해석</h1><br>
-                <h3 class="subtitle">현재의 상황</h3>
-                <p id="explain"></p><br>
-                <h3 class="subtitle">일의 결과</h3>
-                <p id="explainResult"></p>
+            <div class="has-text-centered mt-6 is-hidden" id="interpretation">
+                <h1 class="title has-text-info pt-4">점의 해석</h1><br>
+                <h3 class="subtitle has-text-dark has-text-weight-bold">현재의 상황</h3>
+                <p id="explain" class="is-italic"></p><br>
+                <h3 class="subtitle has-text-dark has-text-weight-bold">일의 결과</h3>
+                <p id="explainResult" class="is-italic"></p>
             </div>
         </div>
         <div class="column is-5 my-6">
-            <h1 class="title has-text-centered">해석 방법</h1>
+            <h1 class="title has-text-centered has-text-info">해석 방법</h1>
         </div>
     </div>
     <script src="index.js"></script>

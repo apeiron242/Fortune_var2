@@ -739,6 +739,6 @@ function showFinalResult(){
     const finalResult = document.querySelector('#finalResult');
     const interpretation = document.querySelector("#interpretation");
 
-    finalResult.classList.toggle('is-hidden');
-    interpretation.classList.toggle('is-hidden')
+    finalResult.className = "container mt-6";
+    interpretation.className = 'has-text-centered mt-3';
 }
