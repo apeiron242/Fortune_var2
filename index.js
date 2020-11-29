@@ -950,9 +950,15 @@ function print7() {
 function showFinalResult() {
   const finalResult = document.querySelector("#finalResult");
   const interpretation = document.querySelector("#interpretation");
+  const mainResult = document.querySelector("#mainResult");
+  const random = document.querySelector("#random");
+  const information = document.querySelector("#information");
 
   finalResult.className = "container mt-6";
   interpretation.className = "has-text-centered mt-3";
+  mainResult.className = "container mt-4";
+  information.className = "container is-hidden";
+  random.value = "점 다시 보기";
 }
 
 function showProMode() {
