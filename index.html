@@ -22,55 +22,24 @@
                 <div class="field has-addons pt-4 is-justify-content-center">
                     <div class="control">
                         <input type="text" id="text" class='input' placeholder="고민을 적어주세요">   
-                    </div>
-                    <div class="control">
-                        <input type="button" value="고민 제출" class="button is-info" id="submitText" onclick="
-                            getText()
-                        ">            
-                    </div>     
+                    </div>    
                 </div>
                 <h3 id="고민" class="my-5 has-text-centered has-text-success-dark"></h3>
                 <h3 id="시간" class="my-5 has-text-centered has-text-success-dark"></h3>
                 <div class="field has-addons is-justify-content-center">
                     <div class="control">
-                        <input type="submit" value="랜덤으로 제출" id="random" class="button is-info" onclick="getRandom()">
+                        <input type="submit" value="점의 결과 보기" id="random" class="button is-info" onclick="getRandom()">
                     </div>
                 </div>
-                <div class="field has-addons mt-5 mb-5 is-justify-content-center">
+                <div class="field has-addons is-justify-content-center mt-5">
                     <div class="control">
-                        <select name="상괘" name="상괘" id="top" class="input">
-                            <option value="0">직접 선택</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
+                        <input type="submit" value="프로 모드 열기" id="proModeBtn" class="button is-danger" onclick=showProMode()>
                     </div>
-                    <div class="control">
-                        <input type="submit" value="상괘" id="topSubmit" class="button is-primary mr-3">
-                    </div>
-                    <div class="control">
-                        <select name="하괘" name="하괘" id="bottom" class="input">
-                            <option value="0">직접 선택</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                            <option value="4">4</option>
-                            <option value="5">5</option>
-                            <option value="6">6</option>
-                            <option value="7">7</option>
-                            <option value="8">8</option>
-                        </select>
-                    </div>
-                    <div class="control">
-                        <input type="submit" value="하괘" id="bottomSubmit" class="button is-primary mr-3">
-                    </div>
-                    <div class="control">
-                        <select name="동효" name="동효" id="variable" class="input">
+                </div>
+                <div class="container is-hidden" id="proMode">
+                    <div class="field has-addons mt-5 mb-5 is-justify-content-center">
+                        <div class="control">
+                            <select name="상괘" name="상괘" id="top" class="input">
                                 <option value="0">직접 선택</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
@@ -78,15 +47,48 @@
                                 <option value="4">4</option>
                                 <option value="5">5</option>
                                 <option value="6">6</option>
-                        </select>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="control">
+                            <input type="submit" value="상괘" id="topSubmit" class="button is-primary mr-3">
+                        </div>
+                        <div class="control">
+                            <select name="하괘" name="하괘" id="bottom" class="input">
+                                <option value="0">직접 선택</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                            </select>
+                        </div>
+                        <div class="control">
+                            <input type="submit" value="하괘" id="bottomSubmit" class="button is-primary mr-3">
+                        </div>
+                        <div class="control">
+                            <select name="동효" name="동효" id="variable" class="input">
+                                    <option value="0">직접 선택</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                            </select>
+                        </div>
+                        <div class="control">
+                            <input type="submit" value="동효" id="variableSubmit" class="button is-primary">
+                        </div>
                     </div>
-                    <div class="control">
-                        <input type="submit" value="동효" id="variableSubmit" class="button is-primary">
-                    </div>
-                </div>
-                <div class="field has-addons is-justify-content-center mb-4">
-                    <div class="control">
-                        <input type="submit" value="직접 제출" id="submitAll" class="button is-primary">
+                    <div class="field has-addons is-justify-content-center mb-4">
+                        <div class="control">
+                            <input type="submit" value="직접 제출" id="submitAll" class="button is-primary">
+                        </div>
                     </div>
                 </div>
             </div>
