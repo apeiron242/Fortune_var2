@@ -12,11 +12,16 @@
         #border{
             border: 3px solid #4fc3f7;
         }
+        @media (min-width: 1000px){
+            body{
+                width: 1000px
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="columns is-flex-direction-row">
-        <div class="column is-7">
+    <div class="columns is-flex-direction-row is-tablet-only">
+        <div class="column is-7 mx-4">
             <h1 class="title has-text-info mb-0 py-6 has-text-centered">매화역수로 운세 보기</h1>
             <div id="border">
                 <div class="field has-addons pt-4 is-justify-content-center">
@@ -100,10 +105,10 @@
                     <div class="column is-5">
                         <h3 class="subtitle has-text-centered mr-2">본괘</h3>
                         <div id="showTop">
-                            <img src="pics\건.png" id="topPic" class="image is-128x128px mb-5">
+                            <img src="pics\건.png" id="topPic" class="mb-5">
                         </div>
                         <div id="showBottom">
-                            <img src="pics\건.png" id="bottomPic" class="image is-128x128px">
+                            <img src="pics\건.png" id="bottomPic" class=>
                         </div>
                     </div>
                     <div class="column is-2 is-align-self-center">
@@ -112,10 +117,10 @@
                     <div class="column is-5">
                         <h3 class="subtitle has-text-centered mr-1">변괘</h3>
                         <div id="variableTop">
-                            <img src="pics\건.png" id="variableTopPic" class="image is-128x128px mb-5">
+                            <img src="pics\건.png" id="variableTopPic" class="mb-5">
                         </div>
                         <div id="variableBottom">
-                            <img src="pics\건.png" id="variableBottomPic" class="image is-128x128px">
+                            <img src="pics\건.png" id="variableBottomPic">
                         </div>
                     </div>
                 </div>
@@ -145,7 +150,7 @@
                 <p id="explainResult" class="is-italic has-text-black"></p>
             </div>
         </div>
-        <div class="column is-5 my-6">
+        <div class="column is-5 my-6 mx-6">
             <h1 class="title has-text-centered has-text-info">해석 방법</h1>
             <div class="content has-text-black">
                 <p class="subtitle has-text-centered mb-0 has-text-black has-text-weight-semibold">상생과 상극</p>
