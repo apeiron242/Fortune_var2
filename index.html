@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
     <style>
         *{
-            background-color: white;
+            background-color: #f5f6fa;
         }
         #border{
             border: 3px solid #4fc3f7;
@@ -17,15 +17,13 @@
 <body>
     <div class="columns is-flex-direction-row">
         <div class="column is-7">
-            <h1 class="title has-text-info has-background-info-light mb-0 py-6 has-text-centered">매화역수로 운세 보기</h1>
-            <div id="border" class="has-background-white-bis">
+            <h1 class="title has-text-info mb-0 py-6 has-text-centered">매화역수로 운세 보기</h1>
+            <div id="border">
                 <div class="field has-addons pt-4 is-justify-content-center">
                     <div class="control">
                         <input type="text" id="text" class='input' placeholder="고민을 적어주세요">   
                     </div>    
                 </div>
-                <h3 id="고민" class="my-5 has-text-centered has-text-success-dark"></h3>
-                <h3 id="시간" class="my-5 has-text-centered has-text-success-dark"></h3>
                 <div class="field has-addons is-justify-content-center">
                     <div class="control">
                         <input type="submit" value="점의 결과 보기" id="random" class="button is-info" onclick="getRandom()">
@@ -93,14 +91,16 @@
                 </div>
             </div>
             <div class="has-text-centered mt-5" id="information">
-                <h3 class="has-text-info subtitle">점의 결과가 이곳에 표시됩니다</h3>
+                <h3 class="has-text-black subtitle has-text-weight-semibold">점의 결과가 이곳에 표시됩니다</h3>
             </div>
+            <h3 id="고민" class="my-5 has-text-centered has-text-black"></h3>
+            <h3 id="시간" class="my-5 has-text-centered has-text-black"></h3>
             <div class="container mt-4 is-hidden" id="mainResult">
                 <div class="columns is-mobile">
                     <div class="column is-5">
                         <h3 class="subtitle has-text-centered mr-2">본괘</h3>
                         <div id="showTop">
-                            <img src="pics\건.png" id="topPic" class="image is-128x128px">
+                            <img src="pics\건.png" id="topPic" class="image is-128x128px mb-5">
                         </div>
                         <div id="showBottom">
                             <img src="pics\건.png" id="bottomPic" class="image is-128x128px">
@@ -112,7 +112,7 @@
                     <div class="column is-5">
                         <h3 class="subtitle has-text-centered mr-1">변괘</h3>
                         <div id="variableTop">
-                            <img src="pics\건.png" id="variableTopPic" class="image is-128x128px">
+                            <img src="pics\건.png" id="variableTopPic" class="image is-128x128px mb-5">
                         </div>
                         <div id="variableBottom">
                             <img src="pics\건.png" id="variableBottomPic" class="image is-128x128px">
@@ -124,29 +124,60 @@
                 <div class="has-text-info title has-text-centered mb-6">점의 결과</div>
                 <div class="columns is-mobile has-text-centered">
                     <div class="column is-4" id="resultMe">
-                        <h3 class="subtitle has-text-dark">나의 괘</h3>
+                        <h3 class="subtitle has-text-black">나의 괘</h3>
                         <img src="" alt="">        
                     </div>
                     <div class="column is-4" id="resultNow">
-                        <h3 class="subtitle has-text-dark">현재 상황</h3>
+                        <h3 class="subtitle has-text-black">현재 상황</h3>
                         <img src="" alt="">
                     </div>
                     <div class="column is-4" id="resultFuture">
-                        <h3 class='subtitle has-text-dark'>일의 결과</h3>
+                        <h3 class='subtitle has-text-black'>일의 결과</h3>
                         <img src="" alt="">
                     </div>
                 </div>
             </div>
             <div class="has-text-centered mt-6 is-hidden" id="interpretation">
                 <h1 class="title has-text-info pt-4">점의 해석</h1><br>
-                <h3 class="subtitle has-text-dark has-text-weight-bold">현재의 상황</h3>
-                <p id="explain" class="is-italic"></p><br>
-                <h3 class="subtitle has-text-dark has-text-weight-bold">일의 결과</h3>
-                <p id="explainResult" class="is-italic"></p>
+                <h3 class="subtitle has-text-black has-text-weight-bold">현재의 상황</h3>
+                <p id="explain" class="is-italic has-text-black"></p><br>
+                <h3 class="subtitle has-text-black has-text-weight-bold">일의 결과</h3>
+                <p id="explainResult" class="is-italic has-text-black"></p>
             </div>
         </div>
         <div class="column is-5 my-6">
             <h1 class="title has-text-centered has-text-info">해석 방법</h1>
+            <div class="content has-text-black">
+                <p class="subtitle has-text-centered mb-0 has-text-black has-text-weight-semibold">상생과 상극</p>
+                <img src="./pics/상생.png" alt="상생">
+                <ol>
+                    <li class="py-2">모든 괘는 자기 고유의 "오행"이 있으며, 이 오행끼리는 상생하기도 상극하기도 합니다</li>
+                    <li class="py-2">오행의 종류는 "목", "화", "토", "금", "수" 다섯 가지가 있으며 위 사진과 같이 색으로 구별할 수 있습니다</li>
+                    <li class="py-2">"목"은 "화"를, "화"는 "토"를, "토"는 "금"을, "금"은 "수"를, "수"는 "목"을 생합니다. 상생은 시계 방향으로 이루어집니다</li>
+                    <li class="py-2">반면 아래 사진과 같이 시계 방향으로 두 단계 뒤에 있는 것은 극합니다. "목"은 "토"를, "화"는 "금"을, "토"는 "수"를, "금"은 "목"을, "수"는 "화"를 극합니다</li>        
+                </ol>
+            </div>
+            <img src="./pics//상극.png" alt="상극">
+            <div class="content has-text-black">
+                <p class="subtitle has-text-centered has-text-weight-semibold my-6">기본적인 해석법</p>
+                <div class="pl-3">
+                    <p class="subtitle has-text-primary">길한 상황</p>
+                    <ol>
+                        <li class="py-1">현재 상황과 일의 결과의 오행이 나를 생한다</li>
+                        <li class="py-1">현재 상황과 일의 결과의 오행이 나와 같다</li>
+                        <li class="py-1">현재 상황과 일의 결과의 오행을 내가 극한다</li>
+                    </ol>
+                </div>
+                <div class="pl-3 mt-5">
+                    <p class="subtitle has-text-danger">흉한 상황</p>
+                    <ol>
+                        <li class="py-1">현재 상황과 일의 결과의 오행이 나를 극한다</li>
+                        <li class="py-1">현재 상황과 일의 결과의 오행을 내가 생한다</li>
+                    </ol>
+                    <p>예를 들어 나의 괘가 "목"인데, 현재 상황이 "수"이면 나를 생하니 현재의 상황이 길한 것이고, 일의 결과가 "금이면" 나를 극하니 일의 결과가 흉한 것입니다</p>          
+    
+                </div>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>

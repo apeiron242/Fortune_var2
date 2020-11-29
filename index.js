@@ -764,21 +764,21 @@ function print7() {
 
   if (resultMe.getAttribute("src") == "./pics/건.png") {
     if (resultFuture.getAttribute("src") == "./pics/건.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다!";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/태.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다!";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/리.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/진.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/손.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/감.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/간.png") {
       explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
     } else {
@@ -786,163 +786,163 @@ function print7() {
     }
   } else if (resultMe.getAttribute("src") == "./pics/태.png") {
     if (resultFuture.getAttribute("src") == "./pics/건.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/태.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/리.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/진.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/손.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/감.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/간.png") {
-      explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
+      explainResult.innerHTML = "일의 결과는 이보다 더 좋을 수 없습니다!";
     } else {
-      explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
+      explainResult.innerHTML = "일의 결과는 이보다 더 좋을 수 없습니다!";
     }
   } else if (resultMe.getAttribute("src") == "./pics/리.png") {
     if (resultFuture.getAttribute("src") == "./pics/건.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/태.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/리.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/진.png") {
-      explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
+      explainResult.innerHTML = "일의 결과는 이보다 더 좋을 수 없습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/손.png") {
-      explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
+      explainResult.innerHTML = "일의 결과는 이보다 더 좋을 수 없습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/감.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/간.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     }
   } else if (resultMe.getAttribute("src") == "./pics/진.png") {
     if (resultFuture.getAttribute("src") == "./pics/건.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/태.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/리.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/진.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/손.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/감.png") {
-      explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
+      explainResult.innerHTML = "일의 결과는 이보다 더 좋을 수 없습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/간.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     }
   } else if (resultMe.getAttribute("src") == "./pics/손.png") {
     if (resultFuture.getAttribute("src") == "./pics/건.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/태.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/리.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/진.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/손.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/감.png") {
-      explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
+      explainResult.innerHTML = "일의 결과는 이보다 더 좋을 수 없습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/간.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     }
   } else if (resultMe.getAttribute("src") == "./pics/감.png") {
     if (resultFuture.getAttribute("src") == "./pics/건.png") {
-      explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
+      explainResult.innerHTML = "일의 결과는 이보다 더 좋을 수 없습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/태.png") {
-      explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
+      explainResult.innerHTML = "일의 결과는 이보다 더 좋을 수 없습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/리.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/진.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/손.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/감.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/간.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     }
   } else if (resultMe.getAttribute("src") == "./pics/간.png") {
     if (resultFuture.getAttribute("src") == "./pics/건.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/태.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/리.png") {
-      explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
+      explainResult.innerHTML = "일의 결과는 이보다 더 좋을 수 없습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/진.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/손.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/감.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/간.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     }
   } else if (resultMe.getAttribute("src") == "./pics/곤.png") {
     if (resultFuture.getAttribute("src") == "./pics/건.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/태.png") {
       explainResult.innerHTML =
-        "현재 상황은 좋지 않으며, 많은 에너지 소모를 겪을 것입니다";
+        "이 일의 결과는 좋지 못하며, 많은 에너지 소모가 있을 것입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/리.png") {
-      explainResult.innerHTML = "현재 상황은 이보다 더 좋을 수 없습니다!";
+      explainResult.innerHTML = "일의 결과는 이보다 더 좋을 수 없습니다!";
     } else if (resultFuture.getAttribute("src") == "./pics/진.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/손.png") {
       explainResult.innerHTML =
-        "현재 상황은 매우 안 좋습니다. 결과가 너무 좋지 않은 이상 이 선택을 피해야 합니다";
+        "이 일의 결과는 매우 안 좋습니다. 피치 못할 사정이 아니라면 이 선택을 피해야 합니다";
     } else if (resultFuture.getAttribute("src") == "./pics/감.png") {
       explainResult.innerHTML =
-        "현재 상황은 조금 어려움이 있으나 헤처나갈 수 있는 어려움입니다";
+        "이 일의 결과는 조금 어려움이 있지만 헤쳐나갈 수 있는 어려움입니다";
     } else if (resultFuture.getAttribute("src") == "./pics/간.png") {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     } else {
-      explainResult.innerHTML = "현재 상황은 매우 좋습니다";
+      explainResult.innerHTML = "이 일의 결과는 매우 좋습니다!";
     }
   }
 }
