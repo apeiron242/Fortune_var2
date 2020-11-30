@@ -34,7 +34,7 @@
                         <input type="submit" value="점의 결과 보기" id="random" class="button is-info" onclick="getRandom()">
                     </div>
                 </div>
-                <div class="field has-addons is-justify-content-center mt-5">
+                <div class="field has-addons is-justify-content-center mt-3">
                     <div class="control">
                         <input type="submit" value="프로 모드 열기" id="proModeBtn" class="button is-danger" onclick=showProMode()>
                     </div>
@@ -43,7 +43,7 @@
                     <div class="field has-addons mt-5 mb-5 is-justify-content-center">
                         <div class="control">
                             <select name="상괘" name="상괘" id="top" class="input">
-                                <option value="0">직접 선택</option>
+                                <option value="0">1~8</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -59,7 +59,7 @@
                         </div>
                         <div class="control">
                             <select name="하괘" name="하괘" id="bottom" class="input">
-                                <option value="0">직접 선택</option>
+                                <option value="0">1~8</option>
                                 <option value="1">1</option>
                                 <option value="2">2</option>
                                 <option value="3">3</option>
@@ -75,7 +75,7 @@
                         </div>
                         <div class="control">
                             <select name="동효" name="동효" id="variable" class="input">
-                                    <option value="0">직접 선택</option>
+                                    <option value="0">1~6</option>
                                     <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
@@ -90,7 +90,7 @@
                     </div>
                     <div class="field has-addons is-justify-content-center mb-4">
                         <div class="control">
-                            <input type="submit" value="직접 제출" id="submitAll" class="button is-primary">
+                            <input type="submit" value="직접 제출" id="submitAll" class="button is-primary" onclick=submit()>
                         </div>
                     </div>
                 </div>
@@ -98,8 +98,8 @@
             <div class="has-text-centered mt-5" id="information">
                 <h3 class="has-text-black subtitle has-text-weight-semibold">점의 결과가 이곳에 표시됩니다</h3>
             </div>
-            <h3 id="고민" class="my-5 has-text-centered has-text-black"></h3>
-            <h3 id="시간" class="my-5 has-text-centered has-text-black"></h3>
+            <h3 id="고민" class="my-5 has-text-centered has-text-black has-text-weight-semibold"></h3>
+            <h3 id="시간" class="my-5 has-text-centered has-text-black has-text-weight-semibold"></h3>
             <div class="container mt-4 is-hidden" id="mainResult">
                 <div class="columns is-mobile">
                     <div class="column is-5">

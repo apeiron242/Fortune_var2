@@ -1,14 +1,3 @@
-const submitAll = document.querySelector("#submitAll");
-
-submitAll.addEventListener("click", print);
-submitAll.addEventListener("click", print2);
-submitAll.addEventListener("click", print3);
-submitAll.addEventListener("click", print4);
-submitAll.addEventListener("click", print5);
-submitAll.addEventListener("click", print6);
-submitAll.addEventListener("click", print7);
-submitAll.addEventListener("click", showFinalResult);
-
 var topPic = document.querySelector("#topPic");
 var bottomPic = document.querySelector("#bottomPic");
 var variableTopPic = document.querySelector("#variableTopPic");
@@ -36,6 +25,18 @@ function getText() {
     ":" +
     minutes;
   document.querySelector("#text").value = "";
+}
+
+function submit() {
+  print();
+  print2();
+  print3();
+  print4();
+  print5();
+  print6();
+  print7();
+  showFinalResult();
+  getText();
 }
 
 function getRandom() {
